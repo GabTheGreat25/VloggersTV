@@ -1,0 +1,30 @@
+.container {
+  display: grid;
+  padding: 0rem 2rem;
+
+  .wrapper {
+    font-size: 2.5rem;
+    display: grid;
+    grid-template-columns: 3rem auto;
+    gap: 1rem;
+
+    .back {
+      color: #ff4654;
+      font-size: 1.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+
+  .body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10rem;
+    text-align: justify;
+
+    .body-title {
+      @apply maya-text-3xl maya-font-semibold;
+      padding: 1.5rem 0;
+    }
+  }
+}

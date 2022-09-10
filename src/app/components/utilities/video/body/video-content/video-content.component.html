@@ -1,0 +1,119 @@
+<div class="content-container">
+  <div class="content-wrapper">
+    <div class="vid">
+      <video
+        height="100%"
+        width="100%"
+        controls
+        muted
+        autoplay="true"
+        [path]="path"
+        hls
+      ></video>
+      <div class="video-title-container">
+        <p class="video-title">Suntukan ng mga sikat 2</p>
+        <div class="video-content-container">
+          <p class="video-content">
+            18,924 watching now Started streaming on Feb 23, 2020
+          </p>
+          <div class="video-icons">
+            <div class="icon-container">
+              <i class="las la-thumbs-up icon"></i>
+              <p class="icon-title">100k</p>
+            </div>
+            <div class="icon-container">
+              <i class="las la-share icon"></i>
+              <p class="icon-title">Share</p>
+            </div>
+            <div class="icon-container">
+              <i class="las la-plus-square icon"></i>
+              <p class="icon-title">Save</p>
+            </div>
+            <i class="las la-flag icon"></i>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="content">
+        <div class="logo-container">
+          <img [src]="icon" alt="icon" />
+          <div class="logo-wrapper">
+            <div class="subscriber-container">
+              <div class="logo-title-container">
+                <h1 class="logo-title">Vloggers Tv</h1>
+                <span class="check-container">
+                  <i class="las la-check check"></i>
+                </span>
+              </div>
+              <p class="subscriber">10.6M subscribers</p>
+            </div>
+          </div>
+          <div class="button-container">
+            <button class="btn-join">Join</button>
+            <button class="btn-sub">Subscribe</button>
+          </div>
+        </div>
+        <div class="body-content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris
+            sit amet massa vitae tortor condimentum lacinia quis. Eu feugiat
+            pretium nibh ipsum consequat nisl vel. Magna sit amet purus gravida
+            quis blandit turpis cursus. Nisl suscipit adipiscing bibendum est.
+            Vitae purus faucibus ornare suspendisse sed nisi lacus sed. Tempus
+            imperdiet nulla malesuada pellentesque elit eget gravida cum sociis.
+            Quisque egestas diam in arcu cursus euismod. Adipiscing bibendum est
+            ultricies integer. Nisl tincidunt eget nullam non nisi est sit amet
+            facilisis. Mattis rhoncus urna neque viverra justo nec ultrices.
+            Placerat vestibulum lectus mauris ultrices eros in cursus turpis.
+            Dignissim sodales ut eu sem integer vitae. Diam vel quam elementum
+            pulvinar. Urna nunc id cursus metus. Lacus viverra vitae congue eu.
+            Viverra adipiscing at in tellus integer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="comment-wrapper">
+      <div class="comment-header">
+        <p class="comment-title">Live Chat</p>
+        <img class="dot" [src]="dot" alt="dot" />
+      </div>
+      <div class="comment-body">
+        <div class="avatar-container" *ngFor="let comment of comments">
+          <img [src]="comment.src" [alt]="comment.alt" />
+          <div>
+            <h1>{{ comment.title }}</h1>
+            <p class="avatar-content">
+              {{ comment.content }}
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="comment-footer">
+        <div class="footer-container">
+          <img [src]="avatar" alt="avatar" />
+          <div>
+            <p>Robin Anderson</p>
+            <input class="comment-text" type="text" placeholder="Comment..." />
+          </div>
+        </div>
+        <div class="footer-icon">
+          <div class="rate-container">
+            <i class="las la-grin icon"></i>
+            <i class="las la-money-bill icon"></i>
+          </div>
+          <div class="send-container">
+            <p class="send-title">0/200</p>
+            <i class="las la-paper-plane icon"></i>
+          </div>
+        </div>
+        <hr />
+        <div class="btn-hide">
+          <button>Hide Chat</button>
+        </div>
+      </div>
+      <div class="advertisement">This is for advertisements</div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="download">
+  <navbar>
+    <span navbar-content>
+      <navbar-menu></navbar-menu>
+    </span>
+  </navbar>
+  <section class="download-container">
+    <div class="download-wrapper">
+      <p class="download-title">Scan Now!</p>
+
+      <div class="qr-container">
+        <img [src]="qrCode" alt="qrCode" />
+      </div>
+
+      <div class="appstore-container">
+        <button (click)="playStore()">
+          <img [src]="playstore" alt="playstore" />
+        </button>
+        <button (click)="appStore()">
+          <img [src]="appstore" alt="appstore" />
+        </button>
+      </div>
+      <p class="download-content">
+        You can download our app to <br />
+        have a better mobile experince.
+      </p>
+    </div>
+  </section>
+</div>

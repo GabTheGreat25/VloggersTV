@@ -1,0 +1,62 @@
+.card {
+  padding: 0.25rem 2rem;
+
+  .title {
+    @apply maya-text-3xl maya-font-medium;
+    padding-bottom: 1rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+
+    .wrapper {
+      border-radius: 0.5rem;
+      border: 1px solid white;
+      padding: 1rem 0rem 1rem 2rem;
+
+      .icon-title {
+        @apply maya-text-2xl;
+        padding-bottom: 1rem;
+      }
+
+      .icon-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        align-items: end;
+
+        .icon {
+          width: 4rem;
+          height: 3rem;
+          padding-left: 0.4rem;
+        }
+
+        .icon-content {
+          @apply maya-text-xl;
+          color: #ff4654;
+        }
+      }
+    }
+  }
+
+  .most-watch {
+    @apply maya-font-semibold maya-text-2xl;
+    color: white;
+    padding: 1.5rem 0 1rem 0;
+  }
+
+  .match-container {
+    position: relative;
+  }
+
+  .slider-container {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  .slider-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

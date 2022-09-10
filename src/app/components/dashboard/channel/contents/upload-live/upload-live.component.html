@@ -1,0 +1,88 @@
+<div>
+  <p class="create-video-title">Go Live</p>
+  <div class="container">
+    <div class="wrapper">
+      <div
+        class="circle-container"
+        routerLink="/dashboard/channel/contents/upload-live"
+        routerLinkActive="active"
+      >
+        <i class="circle-icon fa-solid fa-circle"></i>
+        <p class="circle-title">Upload</p>
+      </div>
+      <div class="circle-line"></div>
+      <div
+        class="circle-container"
+        routerLink="/dashboard/channel/contents/details-live"
+        routerLinkActive="active"
+      >
+        <i class="circle-icon fa-solid fa-circle"></i>
+        <p class="circle-title">Details</p>
+      </div>
+      <div class="circle-line"></div>
+      <div
+        class="circle-container"
+        routerLink="/dashboard/channel/contents/advisory-live"
+        routerLinkActive="active"
+      >
+        <i class="circle-icon fa-solid fa-circle"></i>
+        <p class="circle-title">Advisory</p>
+      </div>
+      <div class="circle-line"></div>
+      <div
+        class="circle-container"
+        routerLink="/dashboard/channel/contents/visibility-live"
+        routerLinkActive="active"
+      >
+        <i class="circle-icon fa-solid fa-circle"></i>
+        <p class="circle-title">Visibility</p>
+      </div>
+    </div>
+  </div>
+  <div class="card-container">
+    <card [background]="background">
+      <card-wrapper card-wrapper>
+        <div class="card-wrapper">
+          <h1 class="card-title">Go Live</h1>
+          <p class="card-content">Upload media content</p>
+        </div>
+        <div class="upload-container">
+          <card class="card" [background]="background">
+            <card-wrapper card-wrapper>
+              <div>
+                <h1 class="upload-title">Stream Key</h1>
+                <p class="upload-content">Upload your stream key.</p>
+                <div>
+                  <textarea
+                    placeholder="Add stream key"
+                    class="text-container"
+                    rows="4"
+                    cols="50"
+                  ></textarea>
+                </div>
+              </div>
+            </card-wrapper>
+          </card>
+          <card class="card" [background]="background">
+            <card-wrapper card-wrapper>
+              <div>
+                <h1 class="upload-title">Thumbnail</h1>
+                <p class="upload-content">
+                  Select or upload a picture that shows what's in your video.
+                </p>
+                <div class="icon-container">
+                  <button class="upload-icon">
+                    <img [src]="upload" alt="upload" />
+                  </button>
+                </div>
+              </div>
+            </card-wrapper>
+          </card>
+        </div>
+        <div class="btn-container">
+          <button class="next-btn" (click)="next()">Next</button>
+        </div>
+      </card-wrapper>
+    </card>
+  </div>
+</div>

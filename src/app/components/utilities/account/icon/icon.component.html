@@ -1,0 +1,11 @@
+<div class="body-wrapper">
+  <carousel [images]="images" [autoSlide]="true"></carousel>
+  <div class="social-media-container">
+    <p class="social-media-title">Follow us on</p>
+    <div class="social-media-icon">
+      <div *ngFor="let logo of logos">
+        <img class="logo" [src]="logo.src" [alt]="logo.alt" />
+      </div>
+    </div>
+  </div>
+</div>

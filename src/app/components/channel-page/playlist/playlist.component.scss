@@ -1,0 +1,59 @@
+.container {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+
+  .route-container {
+    display: grid;
+    grid-template-rows: 1fr 8rem;
+
+    .route-wrapper {
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 5rem 1fr;
+      gap: 2rem;
+      align-items: center;
+
+      .route-title {
+        @apply maya-text-3xl maya-font-medium;
+      }
+    }
+  }
+
+  .btn-container {
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    padding: 0 3rem 2rem 3rem;
+
+    .btn-vid {
+      @apply maya-text-lg;
+      padding-top: 0.75rem;
+    }
+
+    .active {
+      color: #ff4654;
+      border-bottom: 1px solid #ff4654;
+    }
+  }
+
+  .most-watch {
+    @apply maya-font-semibold;
+    font-size: 2rem;
+    color: white;
+    padding: 0 2rem 1rem 2rem;
+  }
+
+  .match-container {
+    position: relative;
+    padding: 0 0 1rem 2rem;
+  }
+
+  .slider-container {
+    display: grid;
+    grid-auto-flow: column;
+  }
+
+  .slider-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

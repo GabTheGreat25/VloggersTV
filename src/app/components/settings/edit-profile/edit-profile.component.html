@@ -1,0 +1,41 @@
+<div>
+  <div class="container">
+    <div class="wrapper">
+      <button>
+        <i class="las la-arrow-left"></i>
+      </button>
+      <p class="back">Back</p>
+    </div>
+  </div>
+  <div class="card">
+    <card [background]="background">
+      <card-wrapper card-wrapper>
+        <div class="card-container">
+          <p class="card-title">Edit Profile</p>
+          <div class="icon-container">
+            <img [src]="changePhoto" alt="changePhoto" />
+            <div class="icon">
+              <button>
+                <i class="las la-camera-retro"></i>
+              </button>
+            </div>
+            <div class="icon-title">
+              <p>VloogersTV</p>
+            </div>
+            <div>
+              <p class="text-title">Firstname</p>
+              <input type="text" placeholder="Firstname" class="text-content" />
+            </div>
+            <div>
+              <p class="text-title">Lastname</p>
+              <input type="text" placeholder="Lastname" class="text-content" />
+            </div>
+            <div class="btn-container">
+              <button class="btn-confirm">Save Changes</button>
+            </div>
+          </div>
+        </div>
+      </card-wrapper>
+    </card>
+  </div>
+</div>

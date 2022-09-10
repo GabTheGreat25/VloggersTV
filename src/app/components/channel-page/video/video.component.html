@@ -1,0 +1,69 @@
+<section class="container">
+  <div>
+    <div class="route-container">
+      <img [src]="bannerImage" alt="bannerImage" />
+      <div class="route-wrapper">
+        <img [src]="circleIcon" alt="circleIcon" />
+        <div>
+          <h1 class="route-title">Jogoore</h1>
+          <p class="route-content">6.55M subscribers</p>
+        </div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <div *ngFor="let tab of tabs">
+        <button
+          [routerLink]="'/channel-page/' + tab.route"
+          routerLinkActive="active"
+          class="btn-vid"
+        >
+          {{ tab.name }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="payment">
+      <div class="image">
+        <img [src]="paidVideo" alt="paidVideo" />
+      </div>
+      <div>
+        <h1 class="content">
+          Suntukan ng mga sikat 2 Haring Bangis Vs John Casimero
+        </h1>
+        <p class="sub-content">VloggersTv</p>
+      </div>
+      <div class="number">
+        <p>3,621,256 Views</p>
+      </div>
+    </div>
+    <div class="payment">
+      <div class="image">
+        <img [src]="paidVideo" alt="paidVideo" />
+      </div>
+      <div>
+        <h1 class="content">
+          Suntukan ng mga sikat 2 Haring Bangis Vs John Casimero
+        </h1>
+        <p class="sub-content">VloggersTv</p>
+      </div>
+      <div class="number">
+        <p>3,621,256 Views</p>
+      </div>
+    </div>
+    <div class="payment">
+      <div class="image">
+        <img [src]="paidVideo" alt="paidVideo" />
+      </div>
+      <div>
+        <h1 class="content">
+          Suntukan ng mga sikat 2 Haring Bangis Vs John Casimero
+        </h1>
+        <p class="sub-content">VloggersTv</p>
+      </div>
+      <div class="number">
+        <p>3,621,256 Views</p>
+      </div>
+    </div>
+  </div>
+</section>

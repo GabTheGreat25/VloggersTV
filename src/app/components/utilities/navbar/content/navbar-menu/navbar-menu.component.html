@@ -1,0 +1,25 @@
+<ng-container>
+  <div class="button-container">
+    <ng-container *ngFor="let tab of tabs">
+      <div [routerLink]="tab.route">
+        <button>{{ tab.name }}</button>
+      </div>
+    </ng-container>
+    <div>
+      <ul class="navbar-wrapper">
+        <li clickOutside (clickOutside)="clickOutside()">
+          <button class="navbar-btn" (click)="onHide()">
+            <img [src]="profileIcon" alt="profileIcon" />
+          </button>
+          <div class="dropdown-menu" *ngIf="isHidden">
+            <button class="dropdown-item">Edit Profile</button>
+            <button class="dropdown-item">Paid Videos</button>
+            <button class="dropdown-item">Help</button>
+            <button class="dropdown-item">App Setting</button>
+            <button class="dropdown-item">Logout</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</ng-container>

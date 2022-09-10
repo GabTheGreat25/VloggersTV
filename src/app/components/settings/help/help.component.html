@@ -1,0 +1,43 @@
+<div>
+  <div class="container">
+    <div class="wrapper">
+      <button (click)="back()">
+        <i class="las la-arrow-left"></i>
+      </button>
+      <p class="back">Back</p>
+    </div>
+  </div>
+  <div class="card">
+    <card [background]="background">
+      <card-wrapper card-wrapper>
+        <div class="card-container">
+          <p class="card-title">Help Online</p>
+          <div class="card-wrapper">
+            <p class="card-content">Help Center</p>
+            <div class="btn-container">
+              <button class="btn-icon" (click)="helpCenter()">
+                <i class="las la-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <p class="card-content">Terms & Conditions</p>
+            <div class="btn-container">
+              <button class="btn-icon" (click)="terms()">
+                <i class="las la-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <p class="card-content">Privacy</p>
+            <div class="btn-container">
+              <button class="btn-icon" (click)="privacy()">
+                <i class="las la-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </card-wrapper>
+    </card>
+  </div>
+</div>

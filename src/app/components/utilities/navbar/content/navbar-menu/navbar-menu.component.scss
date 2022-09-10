@@ -1,0 +1,39 @@
+.button-container {
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: end;
+  align-items: center;
+  padding-top: 1rem;
+  color: white;
+  gap: 2rem;
+
+  .navbar-wrapper {
+    .navbar-btn {
+      @apply maya-font-light;
+      padding: 0 1rem 0 0.5rem;
+      color: white;
+    }
+
+    .dropdown-menu {
+      background-color: #2e2e2e;
+      position: absolute;
+      right: 2.3rem;
+      width: 10.5rem;
+
+      .dropdown-item {
+        @apply maya-grid maya-grid-flow-col maya-gap-1 maya-w-full;
+        padding: 0.5rem 1.25rem;
+        text-align: start;
+
+        &:hover {
+          background-color: #ff4654;
+        }
+
+        img {
+          @apply maya-pt-1 maya-pr-1;
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}

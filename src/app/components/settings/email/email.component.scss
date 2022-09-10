@@ -1,0 +1,79 @@
+.container {
+  display: grid;
+  padding: 1rem 2rem;
+
+  .wrapper {
+    font-size: 2.5rem;
+    display: grid;
+    grid-template-columns: 3rem auto;
+    gap: 1rem;
+
+    .back {
+      color: #ff4654;
+      font-size: 1.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+}
+
+.email-title {
+  @apply maya-text-3xl maya-font-semibold;
+  padding-left: 4.25rem;
+  padding-bottom: 2rem;
+
+  @screen lg {
+    padding-left: 12rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.email-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  .email-content {
+    @apply maya-text-lg maya-font-medium;
+    text-align: start;
+  }
+
+  .email-wrapper {
+    padding: 1rem 0;
+  }
+  .searchBox {
+    display: flex;
+    position: relative;
+
+    .icon-search {
+      color: #f9f9f980;
+      position: absolute;
+      left: 2.5rem;
+      font-size: 2rem;
+    }
+
+    .mainInput {
+      width: 460px;
+      border-radius: 0.5rem;
+      height: 50px;
+      padding: 0 58px;
+      font-size: 16px;
+      margin-left: 30px;
+      background-color: #2e2e2ecc;
+      border: 1px solid #f9f9f980;
+      outline: none;
+    }
+  }
+}
+
+.btn-container {
+  display: grid;
+  justify-content: center;
+  padding-top: 5rem;
+
+  .btn-confirm {
+    @apply maya-text-lg maya-font-semibold;
+    padding: 0.5rem 5rem;
+    background-color: #ff4654;
+    border-radius: 0.5rem;
+  }
+}

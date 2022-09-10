@@ -1,0 +1,35 @@
+<pop-up *ngIf="isOpen" (onClose)="close()"> </pop-up>
+<div class="container">
+  <navbar>
+    <span navbar-content>
+      <navbar-menu></navbar-menu>
+    </span>
+  </navbar>
+  <div class="wrapper">
+    <p class="title">Payment Option</p>
+    <div class="payment">
+      <div class="icon">
+        <img [src]="Gcash" alt="Gcash" />
+      </div>
+      <div>
+        <h1 class="sub-title">GCash</h1>
+        <p class="content">Let’s make your everyday payments safe & easy.</p>
+      </div>
+      <div class="btn-container" (click)="open()">
+        <button class="btn-select">Select</button>
+      </div>
+    </div>
+    <div class="payment">
+      <div class="icon">
+        <img [src]="DragonPay" alt="DragonPay" />
+      </div>
+      <div>
+        <h1 class="sub-title">DragonPay</h1>
+        <p class="content">More ways to pay</p>
+      </div>
+      <div class="btn-container" (click)="open()">
+        <button class="btn-select">Select</button>
+      </div>
+    </div>
+  </div>
+</div>

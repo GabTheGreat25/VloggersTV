@@ -1,0 +1,20 @@
+<div class="comment-container">
+  <div class="comment-wrapper">
+    <div class="icon-container">
+      <img class="avatar" [src]="avatar" alt="avatar" />
+      <input class="comment" type="text" placeholder="Comment..." />
+    </div>
+    <div *ngFor="let comment of comments">
+      <div class="comment-container">
+        <img class="avatar" [src]="comment.src" [alt]="comment.alt" />
+        <div class="comment-wrapper">
+          <h1>{{ comment.title }}</h1>
+          <p class="body">
+            {{ comment.content }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="advertisement">This is for advertisements</div>
+</div>

@@ -1,0 +1,46 @@
+.container {
+  display: grid;
+  grid-template-rows: 5rem auto;
+  height: 100%;
+  color: white;
+  gap: 2rem;
+
+  .wrapper {
+    display: grid;
+    justify-items: center;
+    grid-template-rows: 4rem auto;
+
+    .title {
+      @apply maya-text-4xl;
+      color: #ff4654;
+    }
+
+    .payment {
+      display: grid;
+      grid-template-columns: 0.1fr 0.25fr 1fr;
+      background-color: #2e2e2e;
+      padding: 2rem 1rem;
+      height: fit-content;
+      border-radius: 0.75rem;
+      width: 75%;
+      box-shadow: 0 8px 6px -6px #ff4654;
+
+      .number {
+        @apply maya-text-3xl maya-font-bold;
+        display: grid;
+        justify-content: start;
+        align-items: center;
+        padding-left: 2rem;
+      }
+
+      .content {
+        @apply maya-text-xl maya-font-normal;
+        padding-bottom: 1rem;
+      }
+
+      .sub-content {
+        @apply maya-text-2xl maya-font-semibold;
+      }
+    }
+  }
+}

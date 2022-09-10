@@ -1,0 +1,175 @@
+.container {
+  display: grid;
+  grid-auto-flow: column;
+  padding: 1rem 0 2rem 0;
+  height: 100%;
+
+  .container-logo {
+    @apply maya-text-3xl;
+  }
+
+  .image-container {
+    display: grid;
+    grid-template-columns: 5rem auto;
+    justify-content: end;
+  }
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  .body-container {
+    padding: 0 1.5rem;
+
+    .body-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 0.5fr;
+
+      .card-title {
+        @apply maya-text-2xl maya-font-medium;
+      }
+
+      .card-content {
+        @apply maya-font-light;
+        font-size: 0.8rem;
+      }
+
+      .arrow-right {
+        display: grid;
+        justify-content: end;
+        font-size: 1.75rem;
+      }
+    }
+
+    .upload-container {
+      display: grid;
+      grid-template-columns: 1fr 0.5fr;
+      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+
+      .card-btn {
+        @apply maya-font-light;
+        margin-top: 0.8rem;
+        padding: 0.5rem 2rem;
+        text-align: center;
+        border-radius: 0.5rem;
+        background-color: #ff4654;
+        color: white;
+        font-size: 1.1rem;
+        width: fit-content;
+      }
+
+      .upload-wrapper {
+        display: grid;
+        justify-content: center;
+
+        .upload-title {
+          @apply maya-font-medium;
+          font-size: 1.1rem;
+          padding-bottom: 1rem;
+        }
+
+        .video-container {
+          display: grid;
+          grid-template-columns: 7rem auto;
+
+          .upload-number {
+            @apply maya-text-4xl;
+            padding-top: 0.25rem;
+            text-align: end;
+            color: #ff4654;
+          }
+        }
+      }
+    }
+
+    .person-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .person-wrapper {
+        padding-top: 1.5rem;
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        .person-number {
+          @apply maya-text-3xl;
+          padding-top: 0.5rem;
+          color: #ff4654;
+        }
+      }
+
+      .view-container {
+        display: grid;
+        justify-content: center;
+        padding-top: 0.75rem;
+        padding-left: 4rem;
+        text-align: center;
+
+        .view-title {
+          @apply maya-font-medium;
+          font-size: 0.9rem;
+        }
+
+        .view-total {
+          @apply maya-text-3xl;
+          color: #ff4654;
+        }
+      }
+    }
+  }
+}
+
+.video {
+  padding-top: 2rem;
+  display: grid;
+  grid-auto-flow: column;
+
+  .video-title {
+    @apply maya-text-xl maya-font-medium;
+  }
+
+  .icon-container {
+    display: grid;
+    grid-template-columns: 7rem 1rem;
+    justify-content: end;
+    padding-right: 1rem;
+
+    .icon-title {
+      color: #ff4654;
+    }
+
+    .icon {
+      font-size: 2rem;
+    }
+  }
+}
+
+.stream {
+  padding-top: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+
+  .stream-title {
+    @apply maya-text-3xl maya-font-semibold;
+    padding-bottom: 0.5rem;
+  }
+
+  .stream-sub-content {
+    font-size: 1.1rem;
+    padding-bottom: 0.5rem;
+    color: #a6a6a6;
+  }
+
+  .stream-content {
+    text-align: justify;
+    color: #a6a6a6;
+  }
+}

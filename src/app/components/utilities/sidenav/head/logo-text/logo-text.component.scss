@@ -1,0 +1,19 @@
+.logo-container {
+  padding: 1rem 6rem;
+  display: grid;
+  grid-template-rows: 9.5rem 2rem;
+  text-align: center;
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo-title {
+    @apply maya-text-2xl maya-font-semibold;
+  }
+
+  .logo-content {
+    @apply maya-font-light;
+    font-size: 0.75rem;
+  }
+}

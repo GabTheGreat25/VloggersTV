@@ -1,0 +1,38 @@
+<div class="view-container">
+  <navbar>
+    <span navbar-content>
+      <navbar-menu></navbar-menu>
+    </span>
+  </navbar>
+  <section class="slider-container">
+    <div class="slider-wrapper">
+      <div>
+        <h1 class="pay-title">PAY PER VIEW</h1>
+        <p class="pay-content">Upcoming Event</p>
+      </div>
+      <div class="match-container">
+        <div class="slider-container">
+          <slider
+            class="slider-wrapper"
+            [sliders]="sliders"
+            (OnNext)="stream()"
+          ></slider>
+        </div>
+      </div>
+    </div>
+    <div class="event-container">
+      <p class="event-title">Life Event</p>
+      <div class="event-wrapper">
+        <div class="slider-container">
+          <slider
+            class="slider-wrapper"
+            [sliders]="events"
+            [left]="left"
+            [display]="display"
+            (OnBack)="previous()"
+          ></slider>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

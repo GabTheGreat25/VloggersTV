@@ -1,0 +1,91 @@
+.card {
+  padding: 0.25rem 2rem;
+
+  .card-title {
+    @apply maya-text-3xl maya-font-medium;
+    padding-bottom: 3rem;
+  }
+
+  .table-container {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+  }
+
+  .tbl-header {
+    background-color: #ff4654;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+    .header-container {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+
+      @screen xl {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+
+    th {
+      padding: 1rem;
+      text-align: center;
+      color: #fff;
+    }
+  }
+
+  .tbl-content {
+    background-color: #ffffff;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    .tbl-content-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      &:not(:last-child) {
+        border-bottom: solid 0.1rem rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    .video-container {
+      padding: 1rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 5rem auto;
+
+      @screen xl {
+        padding: 1rem 1rem 1rem 6rem;
+      }
+
+      .video-wrapper {
+        display: grid;
+
+        .tbl-img {
+        }
+
+        .checkbox {
+          accent-color: #516579;
+        }
+      }
+
+      .title {
+        padding-top: 0.5rem;
+      }
+    }
+
+    .tbl-data {
+      text-align: center;
+      padding: 1.5rem 1rem 0 1rem;
+    }
+
+    td {
+      color: black;
+    }
+  }
+}

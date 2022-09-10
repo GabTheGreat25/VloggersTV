@@ -1,0 +1,44 @@
+.download {
+  display: grid;
+  grid-template-rows: 5rem auto;
+  height: 100%;
+  color: white;
+
+  .download-container {
+    display: grid;
+    place-items: center;
+    min-height: 70vh;
+
+    .download-wrapper {
+      display: grid;
+      justify-items: center;
+      justify-content: center;
+      align-items: center;
+      grid-auto-flow: row;
+      gap: 0.5rem;
+
+      @screen xl {
+        gap: 1.5rem;
+      }
+
+      .download-title {
+        @apply maya-text-3xl maya-font-semibold;
+      }
+
+      .qr-container {
+        max-width: 25%;
+      }
+
+      .appstore-container {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 2rem;
+      }
+
+      .download-content {
+        @apply maya-font-medium;
+        text-align: center;
+      }
+    }
+  }
+}

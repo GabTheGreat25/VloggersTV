@@ -1,0 +1,18 @@
+<div *ngIf="images && images.length > 0" class="slide-image-container">
+  <img
+    *ngFor="let image of images; let i = index"
+    class="slide-image"
+    [src]="image.imageSrc"
+    [alt]="image.imageAlt"
+    [ngClass]="{ 'image-active': selectedIndex === i }"
+  />
+</div>
+<div *ngIf="indicators" class="dot-container">
+  <span
+    *ngFor="let dot of images; let i = index"
+    class="dot"
+    [ngClass]="{ 'switch-active': selectedIndex === i }"
+    (click)="selectImage(i)"
+  >
+  </span>
+</div>

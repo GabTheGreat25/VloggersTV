@@ -1,0 +1,17 @@
+<div class="register-container">
+  <div>
+    <navbar [background]="background">
+      <span navbar-content>
+        <navbar-menu></navbar-menu>
+      </span>
+    </navbar>
+  </div>
+  <div class="body-container">
+    <div icon>
+      <icon></icon>
+    </div>
+    <div content>
+      <register-body (onLogin)="login()"></register-body>
+    </div>
+  </div>
+</div>

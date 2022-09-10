@@ -1,0 +1,19 @@
+.dashboard {
+  grid-template-rows: 5rem auto;
+  height: 100%;
+
+  .body {
+    display: grid;
+    height: 100%;
+    grid-template-columns: auto 1fr;
+
+    .sidebar {
+      height: 100%;
+    }
+
+    .router {
+      padding: 6rem 2rem 2rem 2rem;
+      height: 100%;
+    }
+  }
+}

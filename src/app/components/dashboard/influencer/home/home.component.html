@@ -1,0 +1,42 @@
+<card [background]="background">
+  <card-wrapper card-wrapper>
+    <div class="card">
+      <p class="title">Dashboard</p>
+      <div class="container">
+        <div class="wrapper">
+          <p class="icon-title">Wallet</p>
+          <div class="icon-container">
+            <img class="icon" [src]="wallet" alt="wallet" />
+            <p class="icon-content">PHP 500K</p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <p class="icon-title">Total Earning</p>
+          <div class="icon-container">
+            <img class="icon" [src]="money" alt="money" />
+            <p class="icon-content">PHP 500K</p>
+          </div>
+        </div>
+        <div class="wrapper">
+          <p class="icon-title">Supporters</p>
+          <div class="icon-container">
+            <img class="icon" [src]="person" alt="person" />
+            <p class="icon-content">PHP 500K</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="most-watch">Most Watch</p>
+        <div class="match-container">
+          <div class="slider-container">
+            <slider
+              class="slider-wrapper"
+              [sliders]="sliders"
+              (OnNext)="stream()"
+            ></slider>
+          </div>
+        </div>
+      </div>
+    </div>
+  </card-wrapper>
+</card>

@@ -1,0 +1,80 @@
+.match-wrapper {
+  display: inline-block;
+  margin: 0 1rem 0 0;
+  padding-bottom: 1rem;
+
+  .image-container {
+    position: relative;
+    &::before {
+      border-radius: 0.75rem;
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0), transparent);
+    }
+    .image {
+      border-radius: 0.75rem;
+    }
+
+    .image-wrapper {
+      padding: 1rem;
+      position: absolute;
+      bottom: 0rem;
+
+      .image-title {
+        @apply maya-font-semibold;
+        @apply maya-text-2xl;
+      }
+
+      .image-content {
+        font-size: 1rem;
+      }
+    }
+
+    .info-container {
+      position: absolute;
+      top: 13rem;
+      right: 0rem;
+      display: grid;
+      justify-content: end;
+      padding: 1rem 0 1rem 1rem;
+
+      .info {
+        width: 100%;
+        padding: 0.25rem 2rem;
+        color: white;
+        background-color: #ff4654;
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+    }
+
+    .play {
+      position: absolute;
+      top: 6rem;
+      left: 12rem;
+    }
+  }
+}
+
+.left {
+  opacity: 1;
+  z-index: 900;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 5rem;
+  left: 0.5rem;
+  transition: 0.5s;
+}
+
+.right {
+  opacity: 1;
+  z-index: 900;
+  font-size: 3.5rem;
+  position: absolute;
+  top: 5rem;
+  right: 0.5rem;
+  transition: 0.5s;
+}

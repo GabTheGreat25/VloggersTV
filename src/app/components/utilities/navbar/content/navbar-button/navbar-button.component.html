@@ -1,0 +1,15 @@
+<ul class="navbar-wrapper">
+  <li clickOutside (clickOutside)="clickOutside()">
+    <button class="navbar-btn" (click)="onHide()">Create Video</button>
+    <div class="dropdown-menu" *ngIf="isHidden">
+      <button class="dropdown-item" (click)="onUpload()">
+        <img [src]="videoUpload" alt="videoUpload" />
+        Upload Video
+      </button>
+      <button class="dropdown-item" (click)="onLive()">
+        <img [src]="goLive" alt="goLive" />
+        Go Live
+      </button>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,46 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+
+  .body-container {
+    padding: 0 1.5rem;
+
+    .body-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 0.5fr;
+
+      .card-title {
+        @apply maya-text-2xl maya-font-medium;
+        text-align: center;
+        padding-left: 5rem;
+      }
+
+      .arrow-right {
+        display: grid;
+        justify-content: end;
+        font-size: 1.75rem;
+      }
+    }
+
+    .person-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .person-wrapper {
+        padding-top: 1.5rem;
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+
+        .person-number {
+          @apply maya-text-3xl;
+          padding-top: 0.5rem;
+          color: #ff4654;
+        }
+      }
+    }
+  }
+}

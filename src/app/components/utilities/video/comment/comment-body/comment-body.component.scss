@@ -1,0 +1,111 @@
+.comment-container {
+  display: grid;
+  grid-template-rows: 1fr 11.5rem;
+  gap: 1.5rem;
+
+  @screen lg {
+    grid-template-rows: 1fr 16.75rem;
+  }
+
+  @screen xl {
+    grid-template-rows: 2fr 22rem;
+  }
+
+  .comment-wrapper {
+    display: grid;
+    grid-template-rows: 3rem 25rem auto;
+
+    .comment-header {
+      background-color: #2e2e2e;
+      padding: 0.75rem 1rem 0.5rem 1rem;
+      display: grid;
+      grid-template-columns: 4.75rem auto;
+
+      .comment-title {
+        @apply maya-font-semibold;
+      }
+
+      .dot {
+        padding-top: 0.4rem;
+      }
+    }
+
+    .comment-body {
+      background-color: #111111;
+      padding-bottom: 1rem;
+      overflow: auto;
+
+      .avatar-container {
+        padding: 1rem 1rem 0 1rem;
+        display: grid;
+        grid-template-columns: 2.5rem 1fr;
+
+        .avatar-content {
+          @apply maya-font-light;
+          text-align: start;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .comment-footer {
+      background-color: #2e2e2e;
+      padding: 1rem;
+
+      .footer-container {
+        display: grid;
+        grid-template-columns: 2.5rem auto;
+
+        .comment-text {
+          padding-top: 0.5rem;
+          width: 100%;
+          background-color: transparent;
+          outline: none;
+          border-bottom: 1px solid white;
+        }
+      }
+
+      .footer-icon {
+        padding: 0.75rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .rate-container {
+          display: grid;
+          grid-template-columns: 2rem auto;
+          gap: 1rem;
+          cursor: pointer;
+        }
+
+        .send-container {
+          display: grid;
+          justify-content: end;
+          grid-template-columns: 2rem auto;
+          gap: 1rem;
+
+          .send-title {
+            padding-top: 0.25rem;
+          }
+        }
+
+        .icon {
+          font-size: 2rem;
+          cursor: pointer;
+        }
+      }
+
+      .btn-hide {
+        @apply maya-font-semibold maya-text-sm;
+        text-align: center;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+
+  .advertisement {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    color: black;
+  }
+}

@@ -1,0 +1,146 @@
+.video-title {
+  @apply maya-text-4xl;
+}
+
+.btn-container {
+  display: grid;
+  grid-template-columns: 4rem 2fr 0.5fr;
+
+  .btn-vid {
+    @apply maya-text-lg;
+    padding-top: 0.75rem;
+  }
+
+  .active {
+    color: #ff4654;
+    border-bottom: 1px solid #ff4654;
+  }
+}
+
+.table-container {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+.tbl-header {
+  background-color: #516579;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+
+  .header-container {
+    display: grid;
+    grid-template-columns: 2.75fr 1.25fr 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  th {
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.tbl-content {
+  background-color: #ffffff;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  .tbl-content-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    &:not(:last-child) {
+      border-bottom: solid 0.1rem rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .video-container {
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 7rem auto;
+
+    .video-wrapper {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1rem 10rem;
+
+      .checkbox {
+        accent-color: #516579;
+      }
+    }
+
+    .title {
+      padding-top: 0.5rem;
+    }
+  }
+
+  .tbl-data {
+    text-align: center;
+    padding: 1.5rem 1rem 0 1rem;
+
+    .tbl-data-container {
+      text-align: start;
+      display: grid;
+      grid-template-columns: 2rem auto;
+    }
+  }
+
+  td {
+    color: black;
+  }
+}
+
+.dropdown-container {
+  position: relative;
+  display: grid;
+  padding-bottom: 1rem;
+
+  .dropdown {
+    @apply maya-text-primary-neutral-dark;
+    outline: none;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: #2e2e2e;
+    color: white;
+    height: 3rem;
+    display: grid;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    appearance: none;
+    cursor: pointer;
+
+    @screen lg {
+      font-size: 1.1rem;
+    }
+  }
+
+  .option {
+    @apply maya-text-primary-neutral-dark;
+    background-color: white;
+    font-size: 1.1rem;
+    width: fit-content;
+  }
+}
+
+.dropdown-container:after {
+  @apply maya-text-primary-neutral-dark;
+  content: "\f078";
+  font: 1.25rem/1 FontAwesome;
+  right: 1rem;
+  top: 0.1rem;
+  padding: 0.9rem 0 0 0.25rem;
+  position: absolute;
+  pointer-events: none;
+  color: white;
+}
+
+select::-ms-expand {
+  display: none;
+}

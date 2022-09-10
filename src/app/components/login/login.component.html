@@ -1,0 +1,22 @@
+<div class="login-container">
+  <div>
+    <navbar [background]="background">
+      <span navbar-content>
+        <navbar-menu></navbar-menu>
+      </span>
+    </navbar>
+  </div>
+  <div class="body-container">
+    <div icon>
+      <icon></icon>
+    </div>
+    <div content>
+      <login-body
+        [facebook]="facebook"
+        (onEnter)="enter()"
+        (onRegister)="register()"
+        (onSignin)="signIn()"
+      ></login-body>
+    </div>
+  </div>
+</div>

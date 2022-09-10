@@ -1,0 +1,61 @@
+<card [background]="background">
+  <card-wrapper card-wrapper>
+    <div class="container">
+      <p class="title">Analytics</p>
+      <div class="wrapper">
+        <button class="create-btn" (click)="next()">Create User</button>
+      </div>
+    </div>
+    <div class="table-container">
+      <table>
+        <div class="tbl-header">
+          <tr class="header-container">
+            <th>Name</th>
+            <th>Email</th>
+            <th>User Type</th>
+            <th>Gender</th>
+            <th>Date Created</th>
+            <th>Actions</th>
+          </tr>
+        </div>
+
+        <div class="tbl-content">
+          <tr class="tbl-content-container">
+            <td class="tbl-data">Vloggers TV Admin</td>
+            <td class="tbl-data">admin@vloggerstv.com</td>
+            <td class="tbl-data">Admin</td>
+            <td class="tbl-data">Male</td>
+            <td class="tbl-data">2019-09-17</td>
+            <td class="tbl-data">
+              <div class="icon-container">
+                <button>
+                  <img class="icon" [src]="pencil" alt="pencil" />
+                </button>
+                <button>
+                  <img class="icon" [src]="trash" alt="trash" />
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr class="tbl-content-container">
+            <td class="tbl-data">Vloggers TV Admin</td>
+            <td class="tbl-data">admin@vloggerstv.com</td>
+            <td class="tbl-data">Admin</td>
+            <td class="tbl-data">Male</td>
+            <td class="tbl-data">2019-09-17</td>
+            <td class="tbl-data">
+              <div class="icon-container">
+                <button>
+                  <img class="icon" [src]="pencil" alt="pencil" />
+                </button>
+                <button>
+                  <img class="icon" [src]="trash" alt="trash" />
+                </button>
+              </div>
+            </td>
+          </tr>
+        </div>
+      </table>
+    </div>
+  </card-wrapper>
+</card>

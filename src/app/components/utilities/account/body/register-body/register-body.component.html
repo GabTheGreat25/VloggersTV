@@ -1,0 +1,64 @@
+<div class="card-container">
+  <card class="card">
+    <card-wrapper card-wrapper>
+      <div class="wrapper">
+        <p class="card-title">Register</p>
+        <div class="register-container">
+          <div class="register-form-container">
+            <label>First Name</label>
+            <input
+              type="text"
+              class="register-form-control"
+              placeholder="First Name"
+            />
+
+            <label>Mobile Number</label>
+            <input
+              type="text"
+              class="register-form-control"
+              placeholder="+6390000000000"
+            />
+
+            <label>Password</label>
+            <input
+              type="password"
+              class="register-form-control"
+              placeholder="**********"
+            />
+          </div>
+          <div class="register-form-container">
+            <label>Last Name</label>
+            <input
+              type="text"
+              class="register-form-control"
+              placeholder="Last Name"
+            />
+
+            <label
+              >Email Address <span class="optional">(optional)</span>
+            </label>
+            <input
+              type="email"
+              class="register-form-control"
+              placeholder="email@gmail.com"
+            />
+
+            <label>Confirm Password</label>
+            <input
+              type="password"
+              class="register-form-control"
+              placeholder="**********"
+            />
+          </div>
+        </div>
+        <div class="btn-register-container">
+          <button class="btn-register">Register</button>
+        </div>
+        <p class="create-account">
+          Do you have an account already?
+          <button class="btn-create" (click)="login()">Login here</button>
+        </p>
+      </div>
+    </card-wrapper>
+  </card>
+</div>

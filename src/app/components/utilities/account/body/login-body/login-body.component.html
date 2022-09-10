@@ -1,0 +1,48 @@
+<div class="card-container">
+  <card class="card">
+    <card-wrapper card-wrapper>
+      <div class="wrapper">
+        <div class="facebook-container">
+          <p class="facebook-title">
+            Start enjoying great entertainment from
+            <span class="facebook-sub-title">your favorite youtubers</span>
+          </p>
+          <button class="btn-facebook" (click)="signInWithFB()">
+            <img class="facebook" [src]="facebook" alt="facebook" />
+            <p class="facebook-title">Login with Facebook</p>
+          </button>
+        </div>
+        <hr class="hr" />
+        <div class="login-form-container">
+          <label>Email Address/Phone Number</label>
+          <input
+            type="email"
+            class="login-form-control"
+            placeholder="Johndoe@gmail.com"
+          />
+
+          <label>Password</label>
+          <input
+            type="password"
+            class="login-form-control"
+            placeholder="**********"
+          />
+        </div>
+        <div class="checkbox-container">
+          <div class="checkbox-wrapper">
+            <input type="checkbox" class="checkbox" />
+            <label>Remember Password</label>
+          </div>
+          <button class="btn-forgot">Forgot Password?</button>
+        </div>
+        <div class="btn-card-container">
+          <button class="btn-login" (click)="enter()">Login</button>
+        </div>
+        <p class="create-account">
+          Don't have an account yet?
+          <button class="btn-create" (click)="register()">Register here</button>
+        </p>
+      </div>
+    </card-wrapper>
+  </card>
+</div>

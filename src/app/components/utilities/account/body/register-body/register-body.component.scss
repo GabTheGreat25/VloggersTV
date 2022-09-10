@@ -1,0 +1,82 @@
+.card-container {
+  padding: 0 2rem 3rem 0.5rem;
+  display: grid;
+
+  .card {
+    padding: 0 0 0 1rem;
+
+    .wrapper {
+      padding: 3rem 2.5rem 2.65rem 2.5rem;
+
+      .card-title {
+        @apply maya-font-bold maya-text-3xl;
+        padding-bottom: 2.25rem;
+        text-align: center;
+        color: #ff4654;
+      }
+
+      .register-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.5rem;
+        row-gap: 1rem;
+
+        .register-form-container {
+          display: grid;
+          grid-auto-flow: row;
+          gap: 0.25rem;
+
+          .optional {
+            font-size: 0.75rem;
+          }
+
+          .register-form-control {
+            width: 100%;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+            height: 2.5rem;
+            outline: none;
+            &.ng-invalid.ng-touched {
+              @apply maya-ring-2 maya-ring-opacity-70 maya-ring-red-500;
+            }
+            &.ng-valid.ng-touched {
+              @apply maya-ring-2 maya-ring-opacity-70 maya-ring-green-500;
+            }
+          }
+        }
+      }
+
+      .btn-register-container {
+        padding: 0.5rem 0 1rem 0;
+        margin: 0 10rem;
+
+        .btn-register {
+          width: 100%;
+          margin-top: 1rem;
+          padding: 0.65rem 2rem;
+          color: white;
+          background-color: #ff4654;
+          border-radius: 0.65rem;
+          font-weight: 700;
+          font-size: 1.2rem;
+        }
+      }
+
+      .create-account {
+        padding-top: 1.2rem;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 0.25rem;
+        justify-content: center;
+        width: 100%;
+
+        .btn-create {
+          text-decoration: underline;
+          color: #ff4654;
+        }
+      }
+    }
+  }
+}

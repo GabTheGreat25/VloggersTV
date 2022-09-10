@@ -1,0 +1,70 @@
+.view-container {
+  display: grid;
+  grid-template-rows: 5rem auto;
+  color: white;
+
+  .slider-container {
+    display: grid;
+
+    .slider-wrapper {
+      padding: 0.75rem 1rem 0 1rem;
+      display: grid;
+      justify-content: start;
+      grid-auto-flow: row;
+      gap: 1.2rem;
+
+      @screen xl {
+        padding: 1.5rem 1rem 0 1rem;
+      }
+
+      .pay-title {
+        padding-left: 1rem;
+        @apply maya-text-5xl maya-font-semibold;
+      }
+
+      .pay-content {
+        padding-left: 1rem;
+        @apply maya-text-2xl;
+        padding-top: 0.6rem;
+      }
+    }
+
+    .match-container {
+      position: relative;
+    }
+
+    .slider-container {
+      display: grid;
+      grid-auto-flow: column;
+    }
+
+    .slider-wrapper {
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+
+  .event-container {
+    padding: 0 1rem;
+
+    .event-title {
+      padding-left: 1rem;
+      @apply maya-text-2xl maya-font-medium;
+      padding-top: 0.6rem;
+    }
+
+    .event-container {
+      position: relative;
+    }
+
+    .slider-container {
+      display: grid;
+      grid-auto-flow: column;
+    }
+
+    .slider-wrapper {
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}

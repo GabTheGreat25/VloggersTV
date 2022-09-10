@@ -1,0 +1,43 @@
+<div class="comment-container">
+  <div class="comment-wrapper">
+    <div class="comment-header">
+      <p class="comment-title">Live Chat</p>
+      <img class="dot" [src]="dot" alt="dot" />
+    </div>
+    <div class="comment-body">
+      <div class="avatar-container" *ngFor="let comment of comments">
+        <img [src]="comment.src" [alt]="comment.alt" />
+        <div>
+          <h1>{{ comment.title }}</h1>
+          <p class="avatar-content">
+            {{ comment.content }}
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="comment-footer">
+      <div class="footer-container">
+        <img [src]="avatar" alt="avatar" />
+        <div>
+          <p>Robin Anderson</p>
+          <input class="comment-text" type="text" placeholder="Comment..." />
+        </div>
+      </div>
+      <div class="footer-icon">
+        <div class="rate-container">
+          <i class="las la-grin icon"></i>
+          <i class="las la-money-bill icon"></i>
+        </div>
+        <div class="send-container">
+          <p class="send-title">0/200</p>
+          <i class="las la-paper-plane icon"></i>
+        </div>
+      </div>
+      <hr />
+      <div class="btn-hide">
+        <button>Hide Chat</button>
+      </div>
+    </div>
+  </div>
+  <div class="advertisement">This is for advertisements</div>
+</div>

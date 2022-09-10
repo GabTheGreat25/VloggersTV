@@ -1,0 +1,6 @@
+<div class="sidebar" [ngStyle]="{ gap: gap, 'grid-template-rows': rows }">
+  <ng-content select="[sidenav-head]"></ng-content>
+  <ul>
+    <ng-content select="[sidenav-content]"></ng-content>
+  </ul>
+</div>

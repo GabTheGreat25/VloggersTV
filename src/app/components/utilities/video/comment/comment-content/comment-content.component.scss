@@ -1,0 +1,53 @@
+.comment-container {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  gap: 1rem;
+
+  .comment-wrapper {
+    display: grid;
+    grid-template-rows: 5rem auto;
+
+    .icon-container {
+      display: grid;
+      grid-template-columns: 4rem auto;
+      gap: 0.5rem;
+
+      .comment {
+        width: 100%;
+        background-color: transparent;
+        outline: none;
+        border-bottom: 1px solid white;
+        height: 3rem;
+      }
+    }
+  }
+
+  .comment-container {
+    display: grid;
+    grid-template-columns: 4rem auto;
+    gap: 0.5rem;
+    padding-bottom: 0.75rem;
+
+    .comment-wrapper {
+      text-align: justify;
+      display: grid;
+      grid-template-rows: 2.25rem auto;
+
+      .body {
+        @apply maya-font-light maya-text-sm;
+      }
+    }
+  }
+
+  .advertisement {
+    background-color: white;
+    display: grid;
+    place-items: center;
+    color: black;
+  }
+
+  .avatar {
+    width: 3.5rem;
+    padding-top: 0.3rem;
+  }
+}

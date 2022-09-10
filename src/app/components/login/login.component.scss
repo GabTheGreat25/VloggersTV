@@ -1,0 +1,22 @@
+.login-container {
+  display: grid;
+  grid-template-rows: 10% auto;
+  height: 100%;
+  color: black;
+
+  .body-container {
+    display: grid;
+    padding: 3rem 3rem 1rem 3rem;
+    grid-template-rows: 1fr 0.5fr;
+
+    @screen lg {
+      grid-template-rows: none;
+      grid-template-columns: repeat(2, 1fr);
+      padding: 2rem 1rem 0 3rem;
+    }
+
+    @screen xl {
+      padding: 2.7rem 3rem 0 5rem;
+    }
+  }
+}

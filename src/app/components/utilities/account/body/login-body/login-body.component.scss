@@ -1,0 +1,134 @@
+.card-container {
+  padding: 0 2rem 3rem 0.5rem;
+  display: grid;
+
+  .card {
+    padding: 0 0 0 1rem;
+
+    .wrapper {
+      padding: 2rem 2.5rem 1rem 2.5rem;
+
+      .facebook-container {
+        display: grid;
+        justify-content: center;
+        gap: 1rem;
+
+        .facebook-title {
+          @apply maya-font-semibold;
+          text-align: center;
+
+          .facebook-sub-title {
+            display: block;
+          }
+        }
+        .btn-facebook {
+          width: 100%;
+          padding: 0.65rem 4rem;
+          color: white;
+          background-color: #1877f2;
+          border-radius: 0.65rem;
+          font-weight: 700;
+          font-size: 1.2rem;
+          display: grid;
+          grid-template-columns: 2rem auto;
+
+          @screen lg {
+            padding: 0.65rem 2.5rem;
+          }
+
+          @screen xl {
+            padding: 0.65rem 5rem;
+          }
+
+          .facebook-title {
+            padding-top: 0.25rem;
+          }
+        }
+      }
+
+      .hr {
+        padding-bottom: 0.1rem;
+        width: 100%;
+        border: none;
+        background-color: #ccc;
+        margin: 2rem 0;
+      }
+
+      .login-form-container {
+        display: grid;
+        grid-auto-flow: row;
+
+        .login-form-control {
+          width: 100%;
+          margin-bottom: 1rem;
+          padding: 1rem;
+          border: 1px solid #ccc;
+          border-radius: 0.25rem;
+          height: 2.5rem;
+          outline: none;
+          &.ng-invalid.ng-touched {
+            @apply maya-ring-2 maya-ring-opacity-70 maya-ring-red-500;
+          }
+          &.ng-valid.ng-touched {
+            @apply maya-ring-2 maya-ring-opacity-70 maya-ring-green-500;
+          }
+        }
+      }
+
+      .checkbox-container {
+        display: grid;
+        grid-template-columns: 1fr auto;
+
+        .checkbox-wrapper {
+          display: grid;
+          grid-template-columns: 1.75rem auto;
+
+          .checkbox {
+            width: 1.2rem;
+            height: 1.2rem;
+            accent-color: #ff4654;
+          }
+        }
+
+        .btn-forgot {
+          color: #ff4654;
+        }
+      }
+
+      .btn-card-container {
+        padding-top: 2rem;
+        gap: 1rem;
+        text-align: center;
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .btn-login {
+          width: 100%;
+          padding: 0.65rem 6rem;
+          color: white;
+          background-color: #ff4654;
+          border-radius: 0.65rem;
+          font-weight: 700;
+          font-size: 1.2rem;
+        }
+      }
+
+      .create-account {
+        padding-top: 2rem;
+        display: grid;
+        grid-auto-flow: column;
+        gap: 0.25rem;
+        justify-content: center;
+        width: 100%;
+
+        .btn-create {
+          text-decoration: underline;
+          color: #ff4654;
+        }
+      }
+    }
+  }
+}

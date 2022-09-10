@@ -1,0 +1,31 @@
+.navbar-container {
+  z-index: 999;
+  position: fixed;
+  display: block;
+  min-height: 5rem;
+  min-width: 100%;
+  background-color: #111111;
+
+  .navbar-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 0.25rem 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vw;
+
+    .logo {
+      padding-top: 0.5rem;
+      width: 20vw;
+      cursor: pointer;
+
+      @screen lg {
+        width: 15vw;
+      }
+
+      @screen xl {
+        width: 12vw;
+      }
+    }
+  }
+}

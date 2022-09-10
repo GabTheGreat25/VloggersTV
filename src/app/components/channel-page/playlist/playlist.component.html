@@ -1,0 +1,37 @@
+<section class="container">
+  <div>
+    <div class="route-container">
+      <img [src]="bannerImage" alt="bannerImage" />
+      <div class="route-wrapper">
+        <img [src]="circleIcon" alt="circleIcon" />
+        <div>
+          <h1 class="route-title">Jogoore</h1>
+          <p class="route-content">6.55M subscribers</p>
+        </div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <div *ngFor="let tab of tabs">
+        <button
+          [routerLink]="'/channel-page/' + tab.route"
+          routerLinkActive="active"
+          class="btn-vid"
+        >
+          {{ tab.name }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <p class="most-watch">Upcoming Event</p>
+    <div class="match-container" *ngFor="let row of rows">
+      <div class="slider-container">
+        <slider
+          class="slider-wrapper"
+          [sliders]="row.sliders"
+          (OnNext)="stream()"
+        ></slider>
+      </div>
+    </div>
+  </div>
+</section>

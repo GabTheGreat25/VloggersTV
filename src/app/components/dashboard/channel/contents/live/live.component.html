@@ -1,0 +1,60 @@
+<section>
+  <p class="video-title">Contents</p>
+  <div class="btn-container">
+    <div *ngFor="let tab of tabs">
+      <button
+        [routerLink]="'/dashboard/channel/contents/' + tab.route"
+        routerLinkActive="active"
+        class="btn-vid"
+      >
+        {{ tab.name }}
+      </button>
+    </div>
+    <div class="dropdown-container">
+      <select class="dropdown">
+        <option selected disabled hidden>Filter by:</option>
+        <option class="option">Option 1</option>
+        <option class="option">Option 2</option>
+        <option class="option">Last long option</option>
+      </select>
+    </div>
+  </div>
+  <div class="table-container">
+    <table>
+      <div class="tbl-header">
+        <tr class="header-container">
+          <th>Video</th>
+          <th>Visibility</th>
+          <th>Restrictions</th>
+          <th>Date</th>
+          <th>Views</th>
+          <th>Comments</th>
+          <th>Like</th>
+        </tr>
+      </div>
+
+      <div class="tbl-content">
+        <tr class="tbl-content-container">
+          <td class="video-container">
+            <div class="video-wrapper">
+              <input type="checkbox" class="checkbox" />
+              <img [src]="videoImage" alt="videoImage" />
+            </div>
+            <p class="title">Vloggers TV Admin</p>
+          </td>
+          <td class="tbl-data">
+            <div class="tbl-data-container">
+              <img [src]="greenGlobe" alt="globe" />
+              <p>Public</p>
+            </div>
+          </td>
+          <td class="tbl-data">Lorem ipsum</td>
+          <td class="tbl-data">2022-04-12</td>
+          <td class="tbl-data">6,500,000</td>
+          <td class="tbl-data">10,000</td>
+          <td class="tbl-data">10,000</td>
+        </tr>
+      </div>
+    </table>
+  </div>
+</section>

@@ -1,0 +1,71 @@
+<div class="head-container">
+  <navbar>
+    <span navbar-content>
+      <navbar-menu></navbar-menu>
+    </span>
+  </navbar>
+  <section class="home-container">
+    <div class="carousel">
+      <carousel [images]="images" [autoSlide]="true"></carousel>
+    </div>
+    <div class="home-wrapper">
+      <div class="stream-container">
+        <h1 class="stream-title">
+          Now <span class="stream">Streaming</span>
+          <p>Suntukan ng mga Sikat</p>
+        </h1>
+        <p class="maya-pb-4">
+          Introducing THE latest Hype in the entertainment industry. Vlogger’s
+          TV is an entertainment-based platform and production company offering
+          premium and…
+        </p>
+        <div class="watch-container">
+          <h5 class="watch">Watch Now!</h5>
+          <div class="watch-wrapper">
+            <p class="watch-title">PHP 99</p>
+            <button class="btn-watch" (click)="download()">Watch Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="image-container">
+        <span class="image-wrapper">
+          <img class="image" [src]="finalMatch" alt="finalMatch" />
+          <play-button class="play" (OnNext)="stream()"></play-button>
+          <div class="clock-container">
+            <p class="clock-title">COMING SOON</p>
+            <div class="clock-wrapper">
+              <div>
+                <h1 class="clock-number">02</h1>
+                <p class="clock-content">days</p>
+              </div>
+              <div>
+                <h1 class="clock-number">20</h1>
+                <p class="clock-content">hours</p>
+              </div>
+              <div>
+                <h1 class="clock-number">12</h1>
+                <p class="clock-content">min</p>
+              </div>
+              <div>
+                <h1 class="clock-number">32</h1>
+                <p class="clock-content">sec</p>
+              </div>
+            </div>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div>
+      <p class="most-watch">Most Watched</p>
+      <div class="match-container" *ngFor="let row of rows">
+        <div class="slider-container">
+          <slider
+            class="slider-wrapper"
+            [sliders]="row.sliders"
+            (OnNext)="stream()"
+          ></slider>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

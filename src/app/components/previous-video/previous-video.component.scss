@@ -1,0 +1,14 @@
+.previous-container {
+  display: grid;
+  grid-template-rows: 5rem auto;
+  height: 100%;
+  width: 100%;
+  color: white;
+
+  .previous-wrapper {
+    display: grid;
+    grid-auto-flow: row;
+    padding: 3rem 5rem;
+    height: 100%;
+  }
+}

@@ -1,0 +1,57 @@
+<section class="container">
+  <div>
+    <div class="route-container">
+      <img [src]="bannerImage" alt="bannerImage" />
+      <div class="route-wrapper">
+        <img [src]="circleIcon" alt="circleIcon" />
+        <div>
+          <h1 class="route-title">Jogoore</h1>
+          <p class="route-content">6.55M subscribers</p>
+        </div>
+      </div>
+    </div>
+    <div class="btn-container">
+      <div *ngFor="let tab of tabs">
+        <button
+          [routerLink]="'/channel-page/' + tab.route"
+          routerLinkActive="active"
+          class="btn-vid"
+        >
+          {{ tab.name }}
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="stream-container">
+      <h1 class="stream-title">
+        Now <span class="stream">Streaming</span>
+        <p>Suntukan ng mga Sikat</p>
+      </h1>
+      <p class="maya-pb-4">
+        Introducing THE latest Hype in the entertainment industry. Vlogger’s TV
+        is an entertainment-based platform and production company offering
+        premium and…
+      </p>
+      <p>5,552,300 views 3 years ago</p>
+    </div>
+    <div class="image-container">
+      <span class="image-wrapper">
+        <img class="image" [src]="finalMatch" alt="finalMatch" />
+        <play-button class="play" (OnNext)="stream()"></play-button>
+      </span>
+    </div>
+  </div>
+  <div>
+    <p class="most-watch">Upcoming Event</p>
+    <div class="match-container" *ngFor="let row of rows">
+      <div class="slider-container">
+        <slider
+          class="slider-wrapper"
+          [sliders]="row.sliders"
+          (OnNext)="stream()"
+        ></slider>
+      </div>
+    </div>
+  </div>
+</section>

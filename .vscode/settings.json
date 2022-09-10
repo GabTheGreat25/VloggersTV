@@ -1,0 +1,15 @@
+{
+  "conventionalCommits.scopes": [
+    "package",
+    "directive",
+    "component",
+    "module",
+    "env",
+    "angular",
+    "settings",
+    "ci/cd",
+    "akita",
+    "json",
+    "environment"
+  ]
+}

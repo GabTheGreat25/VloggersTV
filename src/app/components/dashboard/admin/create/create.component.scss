@@ -1,0 +1,124 @@
+.icon-container {
+  display: grid;
+  justify-content: start;
+  grid-template-columns: 3rem auto;
+  padding: 1rem;
+
+  .icon-title {
+    color: #ff4654;
+  }
+
+  .icon {
+    font-size: 1.75rem;
+  }
+}
+
+.container {
+  padding: 1rem 15rem;
+  display: grid;
+
+  .title {
+    @apply maya-text-2xl maya-font-medium;
+    color: #ff4654;
+    text-align: center;
+  }
+
+  .dropdown-container {
+    position: relative;
+    display: grid;
+    padding: 1rem 0;
+
+    .dropdown {
+      @apply maya-text-primary-neutral-dark;
+      outline: none;
+      width: 100%;
+      padding: 0 1rem;
+      background-color: white;
+      color: #212121cc;
+      height: 3rem;
+      display: grid;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      appearance: none;
+      cursor: pointer;
+
+      @screen lg {
+        font-size: 1.1rem;
+      }
+    }
+
+    .option {
+      @apply maya-text-primary-neutral-dark;
+      background-color: white;
+      font-size: 1.1rem;
+      width: fit-content;
+    }
+  }
+
+  .dropdown-container:after {
+    @apply maya-text-primary-neutral-dark;
+    content: "\f078";
+    font: 1.25rem/1 FontAwesome;
+    right: 1rem;
+    top: 3.25rem;
+    padding: 0.9rem 0 0 0.25rem;
+    position: absolute;
+    pointer-events: none;
+    color: w#212121CC;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  .content {
+    padding-bottom: 1rem;
+
+    .dropdown-title {
+      padding-bottom: 1rem;
+    }
+
+    .dropdown-text {
+      @apply maya-text-primary-neutral-dark;
+      outline: none;
+      width: 100%;
+      padding: 0 1rem;
+      background-color: white;
+      color: #212121cc;
+      height: 3rem;
+      display: grid;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      appearance: none;
+      cursor: pointer;
+
+      &::placeholder {
+        color: #212121cc;
+      }
+    }
+  }
+}
+
+.btn-container {
+  display: grid;
+  padding-top: 2rem;
+  justify-content: center;
+
+  .btn-create {
+    @apply maya-text-primary-neutral-dark;
+    width: 100%;
+    padding: 0.75rem 5rem;
+    background-color: white;
+    color: white;
+    display: grid;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    background-color: #ff4654;
+  }
+}

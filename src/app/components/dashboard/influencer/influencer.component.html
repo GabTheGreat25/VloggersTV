@@ -1,0 +1,22 @@
+<div class="dashboard">
+  <navbar>
+    <span navbar-content>
+      <navbar-button></navbar-button>
+    </span>
+  </navbar>
+  <div class="body">
+    <div class="sidebar">
+      <sidenav>
+        <span sidenav-head>
+          <logo-text [content]="content"></logo-text>
+        </span>
+        <span sidenav-content>
+          <influencer-content></influencer-content>
+        </span>
+      </sidenav>
+    </div>
+    <div class="router">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

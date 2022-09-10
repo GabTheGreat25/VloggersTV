@@ -1,0 +1,29 @@
+<div class="maya-relative">
+  <div class="match-wrapper" *ngFor="let slider of sliders">
+    <div class="image-container">
+      <img class="image" [src]="slider.src" [alt]="slider.alt" />
+      <div class="image-wrapper">
+        <h1 class="image-title">{{ slider.title }}</h1>
+        <p class="image-content">{{ slider.content }}</p>
+      </div>
+      <div class="info-container" [ngStyle]="{ display: display }">
+        <p class="info">
+          {{ slider.name }}
+        </p>
+      </div>
+      <play-button
+        class="play"
+        (OnNext)="stream()"
+        (OnBack)="previous()"
+        [ngStyle]="{ left: left }"
+      ></play-button>
+    </div>
+  </div>
+
+  <button class="left" appBack>
+    <i class="las la-chevron-left"></i>
+  </button>
+  <button class="right" appNext>
+    <i class="las la-chevron-right"> </i>
+  </button>
+</div>

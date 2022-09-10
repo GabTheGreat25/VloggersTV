@@ -1,0 +1,107 @@
+<section>
+  <div class="container">
+    <p class="container-logo">Dashboard</p>
+    <div class="image-container">
+      <button>
+        <img [src]="upload" alt="upload" />
+      </button>
+      <button>
+        <img [src]="goLive" alt="goLive" />
+      </button>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <card [background]="background">
+      <card-wrapper card-wrapper>
+        <div class="body-container">
+          <div class="body-wrapper">
+            <div>
+              <h1 class="card-title">Upload your videos</h1>
+              <p class="card-content">
+                Upload and publish a video to get started.
+              </p>
+            </div>
+            <button class="arrow-right">
+              <i class="las la-arrow-right"></i>
+            </button>
+          </div>
+          <div class="upload-container">
+            <button class="card-btn">Upload Videos</button>
+            <div class="upload-wrapper">
+              <p class="upload-title">Total Upload</p>
+              <div class="video-container">
+                <img [src]="video" alt="video" />
+                <p class="upload-number">10</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </card-wrapper>
+    </card>
+    <card [background]="background">
+      <card-wrapper card-wrapper>
+        <div class="body-container">
+          <div class="body-wrapper">
+            <div>
+              <h1 class="card-title">Total Subscriber</h1>
+            </div>
+            <button class="arrow-right">
+              <i class="las la-arrow-right"></i>
+            </button>
+          </div>
+          <div class="person-container">
+            <div class="person-wrapper">
+              <img [src]="person" alt="person" />
+              <p class="person-number">900,000</p>
+            </div>
+            <div class="view-container">
+              <h5 class="view-title">Total Views</h5>
+              <p class="view-total">10,000,000</p>
+            </div>
+          </div>
+        </div>
+      </card-wrapper>
+    </card>
+  </div>
+
+  <div class="video">
+    <p class="video-title">Featured Video</p>
+    <div class="icon-container">
+      <p class="icon-title">Edit Section</p>
+      <button>
+        <i class="icon las la-arrow-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="stream">
+    <video
+      height="100%"
+      width="100%"
+      controls
+      muted
+      autoplay="true"
+      hls
+    ></video>
+    <div>
+      <h1 class="stream-title">
+        Battle Of The Youtubers Suntukan Ng Mga Sikat Presscon
+      </h1>
+      <h3 class="stream-sub-content">
+        377,608 views Streamed live on Feb 19, 2022
+      </h3>
+      <h5 class="stream-sub-content">Jogoore</h5>
+      <p class="stream-content">
+        *Disclaimer: The video that you're about to watch is for motivation and
+        entertainment purposes only. This is a personal vlog. Any views or
+        opinions represented in this video are personal and belong solely to the
+        owner and do not represent those of people, institutions, or
+        organizations that the owner may or may not be associated with in
+        personal or professional capacity, unless explicitly stated. Any views
+        or opinions are not intended to malign any religion, ethnic group, club,
+        organization, company, or individual.
+      </p>
+    </div>
+  </div>
+</section>

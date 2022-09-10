@@ -1,0 +1,8 @@
+<nav class="navbar-container" [ngStyle]="{ 'background-color': background }">
+  <div class="navbar-wrapper">
+    <div>
+      <img [src]="logo" alt="logo" class="logo" (click)="home()" />
+    </div>
+    <ng-content select="[navbar-content]"></ng-content>
+  </div>
+</nav>

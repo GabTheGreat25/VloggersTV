@@ -1,0 +1,217 @@
+.head-container {
+  display: grid;
+  grid-template-rows: 5rem auto;
+  height: 100%;
+  color: white;
+
+  .home-container {
+    display: grid;
+    grid-template-rows: 2fr 21rem auto;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+    position: relative;
+
+    @screen lg {
+      grid-template-rows: 2fr 25rem auto;
+      padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    }
+
+    @screen xl {
+      grid-template-rows: 2fr 30rem auto;
+      gap: 3rem;
+      padding: 2rem 3rem 1rem 3rem;
+    }
+
+    .carousel {
+      display: grid;
+      object-fit: contain;
+    }
+
+    .home-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1.75fr;
+      gap: 1.5rem;
+
+      .stream-container {
+        line-height: 1.5rem;
+
+        .stream-title {
+          font-weight: 700;
+          font-size: 1.35rem;
+          line-height: 1.75rem;
+          padding-top: 1.5rem;
+          padding-bottom: 0.5rem;
+
+          @screen lg {
+            padding-top: 1.75rem;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            padding-bottom: 1rem;
+          }
+          @screen xl {
+            padding-top: 0;
+            font-size: 3rem;
+            line-height: 3rem;
+          }
+        }
+
+        .stream {
+          color: #ff4654;
+        }
+      }
+
+      .watch-container {
+        display: grid;
+        gap: 0.5rem;
+        justify-content: start;
+
+        .watch {
+          @apply maya-font-bold maya-text-lg;
+        }
+
+        .watch-wrapper {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          position: relative;
+
+          .watch-title {
+            width: 100%;
+            padding: 0.7rem 2rem 0.7rem 0.5rem;
+            color: white;
+            border: 1px solid #39b54a;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-top-left-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+          }
+
+          .btn-watch {
+            position: absolute;
+            left: 5rem;
+            width: fit-content;
+            padding: 0.75rem 2rem;
+            color: white;
+            background-color: #39b54a;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 0.5rem;
+
+            @screen lg {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .image-container {
+        position: relative;
+        display: grid;
+        justify-content: end;
+
+        .image-wrapper {
+          position: relative;
+        }
+
+        .image {
+          height: 100%;
+          width: 100%;
+          border-radius: 0.75rem;
+        }
+
+        .play {
+          z-index: 900;
+          position: absolute;
+          top: 7.5rem;
+          left: 10.5rem;
+
+          @screen lg {
+            top: 8rem;
+            left: 16.5rem;
+          }
+
+          @screen xl {
+            top: 10rem;
+            left: 21rem;
+          }
+        }
+
+        .clock-container {
+          z-index: 900;
+          position: absolute;
+          bottom: 2.5rem;
+          left: 7rem;
+          color: white;
+          text-align: center;
+
+          @screen lg {
+            bottom: 2rem;
+            left: 9rem;
+          }
+
+          @screen xl {
+            bottom: 3rem;
+            left: 14rem;
+          }
+
+          .clock-title {
+            @apply maya-text-xl maya-font-bold;
+
+            @screen lg {
+              padding-bottom: 1rem;
+            }
+          }
+
+          .clock-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 1rem;
+            color: white;
+            animation: glow 1s ease-in-out infinite alternate;
+
+            @keyframes glow {
+              from {
+                text-shadow: 0 0 10px #fff, 0 0 10px #ff4654, 0 0 40px #ff4654,
+                  0 0 50px #ff4654, 0 0 60px #ff4654, 0 0 70px #ff4654,
+                  0 0 80px #ff4654;
+              }
+
+              to {
+                text-shadow: 0 0 10px #fff, 0 0 10px #ff46562f,
+                  0 0 40px #ff46562f, 0 0 50px #ff46562f, 0 0 60px #ff46562f,
+                  0 0 70px #ff46562f, 0 0 80px #ff46562f;
+              }
+            }
+
+            .clock-number {
+              @apply maya-text-xl maya-font-bold;
+
+              @screen lg {
+                @apply maya-text-6xl maya-font-bold;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .most-watch {
+      @apply maya-font-semibold;
+      font-size: 1.2rem;
+      color: white;
+      padding-bottom: 1rem;
+    }
+
+    .match-container {
+      position: relative;
+    }
+
+    .slider-container {
+      display: grid;
+      grid-auto-flow: column;
+    }
+
+    .slider-wrapper {
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}

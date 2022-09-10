@@ -1,0 +1,43 @@
+<div>
+  <div class="container">
+    <div class="wrapper">
+      <button (click)="back()">
+        <i class="las la-arrow-left"></i>
+      </button>
+      <p class="back">Back</p>
+    </div>
+  </div>
+  <div class="card">
+    <card [background]="background">
+      <card-wrapper card-wrapper>
+        <div class="card-container">
+          <p class="card-title">App Setting</p>
+          <div class="card-wrapper">
+            <p class="card-content">Change Email</p>
+            <div class="btn-container">
+              <button class="btn-icon" (click)="email()">
+                <i class="las la-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <p class="card-content">Change Phone Number</p>
+            <div class="btn-container">
+              <button class="btn-icon" (click)="phoneNumber()">
+                <i class="las la-angle-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-wrapper">
+            <p class="card-content">Change Password</p>
+            <div class="btn-container">
+              <button class="btn-icon" (click)="password()">
+                <i class="las la-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </card-wrapper>
+    </card>
+  </div>
+</div>
